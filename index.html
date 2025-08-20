@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FreshBite - Food Delivery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="logo">FreshBite</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div>
+      <h1>Delicious Food Delivered To You</h1>
+      <p>Fresh ingredients, quick service, and delightful taste.</p>
+      <a href="#menu" class="btn">Order Now</a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features">
+    <h2 class="section-title">Why Choose FreshBite?</h2>
+    <div class="features">
+      <div class="card">
+        <h3>Fresh Ingredients</h3>
+        <p>We use only the freshest local produce and meats in every dish.</p>
+      </div>
+      <div class="card">
+        <h3>Fast Delivery</h3>
+        <p>Hot food at your door within 30 minutes or it's free!</p>
+      </div>
+      <div class="card">
+        <h3>Wide Variety</h3>
+        <p>From classic pizzas to spicy Indian dishes – we’ve got it all.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu">
+    <h2 class="section-title">Our Menu</h2>
+
+    <!-- Veg Section -->
+    <h3 style="text-align:center; margin-top: 2rem; color: #2e7d32;">🌱 Vegetarian Delights</h3>
+    <div class="menu">
+      <div class="card">
+        <img src="C:\Users\HP\Desktop\food\Screenshot (60).png" alt="Paneer Butter Masala">
+        <h3>Paneer Butter Masala</h3>
+        <p>Creamy and rich, served with naan or rice.</p>
+      </div>
+      <div class="card">
+        <img src="C:\Users\HP\Desktop\food\Screenshot (55).png" alt="Veg Biryani">
+        <h3>Veg Biryani</h3>
+        <p>Fragrant basmati rice with fresh vegetables and spices.</p>
+      </div>
+      <div class="card">
+        <img src="C:\Users\HP\Desktop\food\Screenshot (56).png" alt="Chole Bhature">
+        <h3>Chole Bhature</h3>
+        <p>Spicy chickpeas served with deep-fried bread.</p>
+      </div>
+    </div>
+      
+    <!-- Non-Veg Section -->
+    <h3 style="text-align:center; margin-top: 3rem; color: #c62828;">🍗 Non-Vegetarian Specials</h3>
+    <div class="menu">
+      <div class="card">
+        <img src="C:\Users\HP\Pictures\Screenshots\Screenshot (61).png" alt="Chicken Biryani">
+        <h3>Chicken Biryani</h3>
+        <p>Classic biryani with saffron, meat, and aromatic rice.</p>
+      </div>
+      <div class="card">
+        <img src="C:\Users\HP\Pictures\Screenshots\Screenshot (63).png" alt="Fish Curry">
+        <h3>Fish Curry</h3>
+        <p>Coastal-style spicy fish curry with coconut flavors.</p>
+      </div>
+      <div class="card">
+        <img src="C:\Users\HP\Pictures\Screenshots\Screenshot (65).png" alt="Egg Curry">
+        <h3>Egg Curry</h3>
+        <p>Boiled eggs in a spicy and tangy onion-tomato sauce.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <h2 class="section-title">Happy Customers</h2>
+    <div class="testimonials">
+      <div class="card">
+        <p>"The best delivery service in town. Fresh, hot, and super fast!"</p>
+        <strong>- Anjali P.</strong>
+      </div>
+      <div class="card">
+        <p>"I love their variety. Never bored of ordering again and again!"</p>
+        <strong>- Ramesh K.</strong>
+      </div>
+      <div class="card">
+        <p>"Affordable prices with restaurant-quality taste. Love it!"</p>
+        <strong>- Sara M.</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>&copy; 2025 FreshBite. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Toggle nav menu (for mobile)
+    function toggleMenu() {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>
